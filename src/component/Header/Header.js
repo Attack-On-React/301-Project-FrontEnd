@@ -17,6 +17,7 @@ class Header extends Component {
             <Nav className="me-auto">
               <Link to="/">Home</Link>
               <Link to="/profile">Profile</Link>
+              <Link to="/CoursesToAdd">Courses To Add</Link>
               <LogoutButton />
               <LoginButton />
             </Nav>
