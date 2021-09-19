@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-import React, { Component } from "react";
-import axios from "axios";
-import CoursesToAddList from "./CoursesToAddList";
-import Row from "react-bootstrap/Row";
-import ModalCoursesToAddlist from "./ModalCoursesToAddlist";
-import { withAuth0 } from "@auth0/auth0-react";
-import Profile from "../Profile/Profile";
-=======
+
 import React, { Component } from 'react';
 import axios from 'axios'
 import CoursesToAddList from './CoursesToAddList'
@@ -14,7 +6,6 @@ import Row from 'react-bootstrap/Row';
 import ModalCoursesToAddlist from './ModalCoursesToAddlist'
 import { withAuth0 } from '@auth0/auth0-react';
 import Profile from '../Profile/Profile';
->>>>>>> f14734bc546fc38cc8eb7ebbc95411d7bc2c031a
 
 class CoursesToAdd extends Component {
   constructor(props) {
@@ -46,45 +37,7 @@ class CoursesToAdd extends Component {
       });
   };
 
-<<<<<<< HEAD
-  /**================== add Item To Fav ==================== */
 
-  addCourse = (item) => {
-    console.log(item);
-    const { user } = this.props.auth0;
-    const email = user.email;
-
-    const obj = {
-      courseName: item.courseName,
-      urlimg: item.urlimg,
-      unv: item.unv,
-      unvimg: item.urlimg,
-      description: item.description,
-      price: item.price,
-    };
-    axios.post("http://localhost:3010/addcourse", obj).then((result) => {
-      this.setState({
-        addedItems: result.data,
-      });
-    });
-  };
-  //--------------------------------------------
-  render() {
-    return (
-      <>
-        <h1>These our courses</h1>
-        <Row xs={1} md={3} className="g-4">
-          {this.state.courseArray.map((item) => {
-            return <CoursesToAddList item={item} addCourse={this.addCourse} />;
-          })}
-        </Row>
-      </>
-    );
-  }
-}
-
-export default withAuth0(CoursesToAdd);
-=======
     constructor(props){
         super(props);
         this.state = {
@@ -190,4 +143,3 @@ export default withAuth0(CoursesToAdd);
 }
 
 export default withAuth0(CoursesToAdd);
->>>>>>> f14734bc546fc38cc8eb7ebbc95411d7bc2c031a
