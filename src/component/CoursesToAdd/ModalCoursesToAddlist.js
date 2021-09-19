@@ -21,7 +21,7 @@ class ModalCoursesToAddlist extends Component {
             <Button variant="secondary" onClick={this.props.handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={this.props.handleClose}>
+            <Button variant="primary" onClick={this.props.addCourse}>
               Add to my course
             </Button>
           </Modal.Footer>
