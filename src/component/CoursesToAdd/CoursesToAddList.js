@@ -8,7 +8,9 @@ class CoursesToAddList extends Component {
     return (
       <>
       <Col>
-        <Card style={{ width: "18rem" }}  >
+
+        <Card style={{ width: "18rem" }} >
+          <div onClick={()=>{this.props.showModal(this.props.item)}}>
           <Card.Img variant="top" src={this.props.item.urlimg} />
           <Card.Body>
             <Card.Title>Course name: {this.props.item.courseName}</Card.Title>
@@ -18,7 +20,8 @@ class CoursesToAddList extends Component {
                 Price: {this.props.item.price}
             </Card.Text>
           </Card.Body>
-            <Button variant="primary" value="submit" onClick={()=>{this.props.addCourse(this.props.item)}} >Add to my courses</Button>
+          </div>
+            <Button variant="primary"onClick={()=>{this.props.addCourse(this.props.item)}}>Add to my courses</Button>
         </Card>
         </Col>
       </>
