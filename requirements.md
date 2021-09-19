@@ -1,4 +1,9 @@
 
+## WireFrame:
+![hello](src/component/img/WireframingTemplate.jpg)
+
+
+## Vision:
 - We greated this website to provide people with online courses from home which its easier for them. 
 
 - the main point is to help people with the subjects that they are struggling with.
