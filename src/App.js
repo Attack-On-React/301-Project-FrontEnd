@@ -8,6 +8,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Home from './component/Homepage/Home'
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
                   <Profile/>
                 </Route>           
             </Switch>
+            <Home/>
         <Footer/>
      </Router>
       </>
