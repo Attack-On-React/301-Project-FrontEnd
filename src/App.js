@@ -5,13 +5,12 @@ import Profile from './component/Profile/Profile';
 import CoursesToAdd from './component/CoursesToAdd/CoursesToAdd';
 import Aboutus from './component/Aboutus/Aboutus';
 
-
-
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import Home from './component/Homepage/Home'
 
 class App extends Component {
   render() {
@@ -22,6 +21,7 @@ class App extends Component {
           <Switch>
 
             <Route exact path="/">
+      <Home/>
             </Route>
 
             <Route exact path="/CoursesToAdd">
@@ -37,11 +37,10 @@ class App extends Component {
             </Route>
 
            
-
-
           </Switch>
           <Footer />
         </Router>
+
       </>
     );
   }
