@@ -1,0 +1,23 @@
+body{
+    padding-top:10%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.imgDiv {
+    max-width: 100%;
+    margin: 0 auto;
+}
+  .carousel-caption{
+    position: initial !important;
+  }
+  .textDiv{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.514);
+    margin-bottom: 18px;
+    padding: 7px 24px;
+  }
+  .active.carousel-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
