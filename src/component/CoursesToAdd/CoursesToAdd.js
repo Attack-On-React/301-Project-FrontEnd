@@ -4,7 +4,7 @@ import CoursesToAddList from './CoursesToAddList'
 import Row from 'react-bootstrap/Row';
 import ModalCoursesToAddlist from './ModalCoursesToAddlist'
 import { withAuth0 } from '@auth0/auth0-react';
-import Profile from '../Profile/Profile';
+// import Profile from '../Profile/Profile';
 
 class CoursesToAdd extends Component {
 
