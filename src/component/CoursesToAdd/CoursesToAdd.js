@@ -4,7 +4,8 @@ import CoursesToAddList from './CoursesToAddList'
 import Row from 'react-bootstrap/Row';
 import ModalCoursesToAddlist from './ModalCoursesToAddlist'
 import { withAuth0 } from '@auth0/auth0-react';
-import Profile from '../Profile/Profile';
+import "./Css/CoursesToAdd.css"
+
 
 class CoursesToAdd extends Component {
 
@@ -65,12 +66,12 @@ class CoursesToAdd extends Component {
         const email= user.email;
         console.log('before obj');
        const obj={
-        courseName:this.state.courseName,
-        urlimg:this.state.urlimg,
-        unv:this.state.unv,
-        unvimg:this.state.unvimg,
-        description:this.state.description,
-        price:this.state.price,
+        courseName:item.courseName,
+        urlimg:item.urlimg,
+        unv:item.unv,
+        unvimg:item.unvimg,
+        description:item.description,
+        price:item.price,
         email:email
         }
         console.log(obj);
@@ -80,6 +81,7 @@ class CoursesToAdd extends Component {
         .then(result=>{
             this.setState({
              addArray:result.data,
+
             })
             console.log(this.state.addArray);
     })
@@ -107,8 +109,6 @@ class CoursesToAdd extends Component {
                 price={this.state.price}
                 addCourse={this.addCourse}
                 />
-                        <Profile addArray={this.state.addArray}/>
-                
             </>
         );
     }
