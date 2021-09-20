@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+
 
 class MyCourses extends Component {
-    render() {
-        return (
-            <>
-                
-            </>
-        );
-    }
+  render() {
+    return (
+      <>
+       
+      </>
+    );
+  }
 }
 
 export default MyCourses;

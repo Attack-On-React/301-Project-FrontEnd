@@ -17,9 +17,9 @@ class CoursesToAddList extends Component {
                 <img  alt ="UnviercityImage" src={this.props.item.unvimg}/><br/>
                 Price: {this.props.item.price}
             </Card.Text>
-            <Button variant="primary">Add to my courses</Button>
           </Card.Body>
         </Card>
+            <Button variant="primary"onClick={()=>{this.props.addCourse(this.props.item)}}>Add to my courses</Button>
         </Col>
       </>
     );
