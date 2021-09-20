@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-import React, { Component } from "react";
-import Accordion from "react-bootstrap/Accordion";
-
-class ProfileList extends Component {
-  render() {
-    return (
-      <>
-
-{this.props.item.courseName}
- 
-
-        
-      </>
-    );
-  }
-}
-
-export default ProfileList;
-=======
 import React, { Component } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Button from 'react-bootstrap/Button';
@@ -44,4 +24,3 @@ class ProfileList extends Component {
 }
 
 export default ProfileList;
->>>>>>> f14734bc546fc38cc8eb7ebbc95411d7bc2c031a

@@ -1,41 +1,12 @@
-
 import React, { Component } from 'react';
 import axios from 'axios'
 import CoursesToAddList from './CoursesToAddList'
 import Row from 'react-bootstrap/Row';
 import ModalCoursesToAddlist from './ModalCoursesToAddlist'
 import { withAuth0 } from '@auth0/auth0-react';
-import Profile from '../Profile/Profile';
+import "./Css/CoursesToAdd.css"
 
 class CoursesToAdd extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      addedItems: [],
-      courseArray: [],
-      showflag: false,
-      courseName: "",
-      urlimg: "",
-      unv: "",
-      unvimg: "",
-      description: "",
-      price: "",
-    };
-  }
-
-  // Method to self invoke to render the data from the server side
-  componentDidMount = () => {
-    axios
-      .get("http://localhost:3010/coursesData")
-      .then((result) => {
-        this.setState({
-          courseArray: result.data,
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
 
 
     constructor(props){

@@ -75,7 +75,6 @@ class Profile extends Component {
           })}
           </Accordion>
         </>;
-
   }
 }
 
