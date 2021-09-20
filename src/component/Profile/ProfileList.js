@@ -10,8 +10,8 @@ class ProfileList extends Component {
     <Accordion.Body>
       <img alt="courseImage" src={this.props.item.urlimg}/>
       Price:{this.props.item.price}
-      <Button onClick={()=>{this.props.updateCourses(this.props.item._id)}}>Update Price</Button>
-      <Button>Delete</Button>
+      <Button onClick={()=>{this.props.showProfileModal(this.props.item)}}>Update subscription</Button>
+      <Button onClick={()=>{this.props.deleteCourses(this.props.item._id)}}>Delete</Button>
       <Button>Buy Now</Button>
     </Accordion.Body>
   </Accordion.Item>
