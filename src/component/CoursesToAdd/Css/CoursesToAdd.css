@@ -1,0 +1,102 @@
+.col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button.btn.btn-primary {
+    width: 100%;
+    transition: trasnform 100ms ease-in-out
+}
+
+.button:hover button.btn.btn-primary{
+    background-color: black;
+    animation: left-to-right 250ms ease-in forwards ;
+}
+
+@keyframes left-to-right{
+    0%{
+        background-color: #0d6efd;
+    }
+    
+    
+    100%{
+        background-color:#0a53c1;
+    }
+}
+/*==========================================*/
+ .card{
+     position: relative;
+    transition: transform 50ms ease-in-out infinite;
+    /* overflow: hidden; */
+}
+
+.fullCard:hover .card{
+   animation: change-view 0.5s ease-in-out forwards ; 
+}
+
+@keyframes change-view {
+
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.02);
+
+    }
+    50%{
+        transform: scale(1.04);
+
+    }
+    75%{
+        transform: scale(1.06);
+
+    }
+    100%{
+        transform: scale(1.08);
+    }
+    
+
+}
+/*===================*/
+
+/*===================*/
+img.img-fluid {
+    width: 100%;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+  
+h1 {
+    text-align: center;
+    margin: 11px 0 50px 0;
+}
+
+.g-4.row.row-cols-md-4.row-cols-1 {
+    margin: 0 0 30px 0;
+}
+
+/* 
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  } */
+
