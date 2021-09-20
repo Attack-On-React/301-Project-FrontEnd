@@ -4,6 +4,7 @@ import Footer from './component/Footer/Footer';
 import Profile from './component/Profile/Profile';
 import CoursesToAdd from './component/CoursesToAdd/CoursesToAdd';
 import Aboutus from './component/Aboutus/Aboutus';
+import Blogs from './component/Blogs/Blogs';
 
 import {
   BrowserRouter as Router,
@@ -22,6 +23,9 @@ class App extends Component {
 
             <Route exact path="/">
       <Home/>
+            </Route>
+            <Route exact path="/blogs">
+      <Blogs/>
             </Route>
 
             <Route exact path="/CoursesToAdd">

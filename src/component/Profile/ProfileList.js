@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Button from 'react-bootstrap/Button';
+import './ProfileList.css';
 class ProfileList extends Component {
   render() {
     return (
