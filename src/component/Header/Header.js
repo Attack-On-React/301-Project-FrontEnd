@@ -68,6 +68,7 @@ export class Header extends Component {
 
                             <Nav.Link href="/CoursesToAdd">Courses To Add</Nav.Link>
                             <Nav.Link href="/profile">Profile</Nav.Link>
+                            <Nav.Link href="/blogs">Blogs</Nav.Link>
                             {/* <Nav.Link href="/User">User</Nav.Link> */}
                           
                             
