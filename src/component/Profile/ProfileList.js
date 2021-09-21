@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Button from 'react-bootstrap/Button';
+import './ProfileList.css';
 class ProfileList extends Component {
   render() {
     return (
@@ -10,8 +11,8 @@ class ProfileList extends Component {
     <Accordion.Body>
       <img alt="courseImage" src={this.props.item.urlimg}/>
       Price:{this.props.item.price}
-      <Button onClick={()=>{this.props.updateCourses(this.props.item._id)}}>Update Price</Button>
-      <Button>Delete</Button>
+      <Button onClick={()=>{this.props.showProfileModal(this.props.item)}}>Update subscription</Button>
+      <Button onClick={()=>{this.props.deleteCourses(this.props.item._id)}}>Delete</Button>
       <Button>Buy Now</Button>
     </Accordion.Body>
   </Accordion.Item>
