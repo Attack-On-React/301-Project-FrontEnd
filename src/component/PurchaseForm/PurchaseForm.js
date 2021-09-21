@@ -1,76 +1,91 @@
 import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-// import "./PurchaseForm.css";
+import "./PurchaseForm.css";
+import { FaCcVisa,FaCcPaypal,FaCcMastercard,FaCcDiscover,FaEnvelope,FaRegAddressCard,FaCity } from "react-icons/fa";
+import { BsFillPersonFill } from "react-icons/bs";
+
 
 class PurchaseForm extends Component {
     render() {
         return (
-            <div class='full'>
-            <Form>
-            <br/>
-  <Row className="mb-3">
-    
-      <div class ='details'>
-    <Form.Group>
-        <Form.Label>Full Name</Form.Label><br/>
-      <Form.Control type='text' style={{ width: '24rem'}}/>
-      <Form.Label>Email</Form.Label>
-      <Form.Control type="email" style={{ width: '24rem'}}/>
-    </Form.Group>
+<div class="purchasepage">
+  <div class="textPurchase">
+<h2 >PRODUCT ORDER FORM</h2>
+<h5 class="innertextpurchase">Please fill out the form below to complete your order </h5>
 </div>
-  </Row>
+<div class="rowdiv">
+  <div class="col-75">
+    <div class="containerPurchase">
+      <form >
+      
+        <div class="rowdiv">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label class="labelPurchase" for="fname"><i><BsFillPersonFill class="svgPurchase"/></i> Full Name</label>
+            <input class="inputPurchase" type="text" id="fname" name="firstname" placeholder="John M. Doe"/>
+            <label class="labelPurchase" for="email"><i><FaEnvelope class="svgPurchase"/></i> Email</label>
+            <input class="inputPurchase" type="text" id="email" name="email" placeholder="john@example.com"/>
+            <label class="labelPurchase" for="adr"><i><FaRegAddressCard class="svgPurchase"/></i> Address</label>
+            <input class="inputPurchase" type="text" id="adr" name="address" placeholder="542 W. 15th Street"/>
+            <label class="labelPurchase" for="city"><i><FaCity class="svgPurchase"/></i> City</label>
+            <input class="inputPurchase" type="text" id="city" name="city" placeholder="New York"/>
 
-
-
-<div class='payment'>
-  <Form.Group className="mb-3">
-    <Form.Label>Payment accepted cards</Form.Label><br/>
-    <img src='https://www.munroefalls.com/ImageRepository/Document?documentId=1712'/>
-  </Form.Group>
-
-  <Form.Group className="mb-3">
-    <Form.Label>Name of Credit Card Owner</Form.Label>
-    <Form.Control type='text' style={{ width: '24rem'}}/>
-  </Form.Group>
-  <br/>
-  <Form.Group className="mb-3">
-    <Form.Label>Credit Card Number</Form.Label>
-    <Form.Control type='number' style={{ width: '24rem'}}/>
-  </Form.Group>
-  </div>
-  <br/>
-
-  <div class='address'>
-  <Form.Group className="mb-3" controlId="formGridAddress1">
-    <Form.Label>City</Form.Label>
-    <Form.Control style={{ width: '24rem'}}/>
-  </Form.Group>
-    <br/>
-    <Form.Group className="mb-3" controlId="formGridAddress1">
-    <Form.Label>Zip</Form.Label>
-    <Form.Control style={{ width: '24rem'}}/>
-  </Form.Group>
-    <br/>
-    <Form.Group className="mb-3" controlId="formGridAddress1">
-    <Form.Label>Address</Form.Label>
-    <Form.Control style={{ width: '24rem'}}/>
-  </Form.Group>
-
-  </div>
-
-  <br/>
-  <Button id='checkout' type="submit" style={{ width: '15rem', height:'5rem'}}>
-    Proceed to checkout
-  </Button>
-</Form>
-
-<br/>
+            <div class="rowdiv">
+              <div class="col-50">
+                <label class="labelPurchase" for="state">State</label>
+                <input class="inputPurchase" type="text" id="state" name="state" placeholder="NY"/>
+              </div>
+              <div class="col-50">
+                <label class="labelPurchase" for="zip">Zip</label>
+                <input class="inputPurchase" type="text" id="zip" name="zip" placeholder="10001"/>
+              </div>
             </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label class="labelPurchase" for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i  style={{color:"navy"}}><FaCcVisa /></i>
+              <i  style={{color:"blue"}}><FaCcPaypal/></i>
+              <i  style={{color:"red"}}><FaCcMastercard/></i>
+              <i  style={{color:"orange"}}><FaCcDiscover/></i>
+            </div>
+            <label class="labelPurchase" for="cname">Name on Card</label>
+            <input class="inputPurchase" type="text" id="cname" name="cardname" placeholder="John More Doe"/>
+            <label class="labelPurchase" for="ccnum">Credit card number</label>
+            <input class="inputPurchase" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"/>
+            <label class="labelPurchase" for="expmonth">Exp Month</label>
+            <input class="inputPurchase" type="text" id="expmonth" name="expmonth" placeholder="September"/>
+            <div class="rowdiv">
+              <div class="col-50">
+                <label class="labelPurchase" for="expyear">Exp Year</label>
+                <input class="inputPurchase" type="text" id="expyear" name="expyear" placeholder="2018"/>
+              </div>
+              <div class="col-50">
+                <label class="labelPurchase" for="cvv">CVV</label>
+                <input class="inputPurchase" type="text" id="cvv" name="cvv" placeholder="352"/>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label class="labelPurchase">
+          <input class="inputPurchase" type="checkbox" checked="checked" name="sameadr"/> Shipping address same as billing
+        </label>
+        <input class="inputPurchase" type="submit" value="Continue to checkout" class="btnPurchase"/>
+      </form>
+    </div>
+  </div>
+ 
+</div>
+</div>
         );
     }
 }
 
 export default PurchaseForm;
+
+
+
+
+
