@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
+import { BiAddToQueue } from "react-icons/bi";
+
 
 class CoursesToAddList extends Component {
   render() {
@@ -25,26 +27,28 @@ class CoursesToAddList extends Component {
                 />
                 <Card.Body>
                   <Card.Title style={{ height: "7rem" }}>
-                    Course name: {this.props.item.courseName}
+                    <div class="courseTitle">{this.props.item.courseName}</div>
                   </Card.Title>
                   <Card.Text>{this.props.item.unv}</Card.Text>
+                  <div class="coursesImg">
                   <Card.Img
                     variant="top"
                     style={{ width: "100px" }}
                     src={this.props.item.unvimg}
                   />
-                  <Card.Text>Price: {this.props.item.price}</Card.Text>
+                  </div>
+                  <Card.Text>Subscription: {this.props.item.price}</Card.Text>
                 </Card.Body>
               </div>
               <div class="button">
                 <ion-icon name="add-outline">
-                  <Button
+                  <Button  class="addbtn"
                     variant="primary"
                     onClick={() => {
                       this.props.addCourse(this.props.item);
                     }}
                   >{" "}
-                    Add to My Courses
+                    <BiAddToQueue/> Add to My Courses 
                   </Button>
                 </ion-icon>
               </div>
