@@ -18,7 +18,7 @@ class BlogsList extends Component {
         <Carousel fade>
           <Carousel.Item>
             {this.props.techCrunchArray.map((item, i) => {
-              if (i < 5) {
+              if (i < 4) {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
@@ -35,7 +35,7 @@ class BlogsList extends Component {
                         <div class={"textDiv"}>
                           <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
+                        <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
                     </Card>
                   </div>
@@ -43,9 +43,9 @@ class BlogsList extends Component {
               }
             })}
           </Carousel.Item>
-          <Carousel.Item>
+          {/* <Carousel.Item>
             {this.props.techCrunchArray.map((item, i) => {
-              if (i > 4 && i < 10) {
+              if (i > 3 && i < 8) {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
@@ -62,20 +62,20 @@ class BlogsList extends Component {
                         <div class={"textDiv"}>
                           <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
+                        <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
                     </Card>
                   </div>
                 );
               }
             })}
-          </Carousel.Item>
+          </Carousel.Item> */}
         </Carousel>
         {/* ------------------------------------------------------------------------------------------------------ */}
         <Carousel fade>
           <Carousel.Item>
             {this.props.topbusinessArray.map((item, i) => {
-              if (i < 5) {
+              if (i < 4) {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
@@ -92,7 +92,7 @@ class BlogsList extends Component {
                         <div class={"textDiv"}>
                           <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
+                        <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
                     </Card>
                   </div>
@@ -102,7 +102,7 @@ class BlogsList extends Component {
           </Carousel.Item>
           <Carousel.Item>
             {this.props.topbusinessArray.map((item, i) => {
-              if (i > 4 && i < 10) {
+              if (i > 3 && i < 8) {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
@@ -119,7 +119,7 @@ class BlogsList extends Component {
                         <div class={"textDiv"}>
                           <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
+                        <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
                     </Card>
                   </div>
@@ -132,7 +132,7 @@ class BlogsList extends Component {
         <Carousel fade>
           <Carousel.Item>
             {this.props.teslaArticlesArray.map((item, i) => {
-              if (i < 5) {
+              if (i < 4) {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
@@ -149,7 +149,7 @@ class BlogsList extends Component {
                         <div class={"textDiv"}>
                           <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
+                        <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
                     </Card>
                   </div>
@@ -159,7 +159,7 @@ class BlogsList extends Component {
           </Carousel.Item>
           <Carousel.Item>
             {this.props.teslaArticlesArray.map((item, i) => {
-              if (i > 4 && i < 10) {
+              if (i > 3 && i < 8) {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
@@ -176,7 +176,7 @@ class BlogsList extends Component {
                         <div class={"textDiv"}>
                           <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
+                        <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
                     </Card>
                   </div>
