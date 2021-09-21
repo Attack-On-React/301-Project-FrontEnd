@@ -28,7 +28,7 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
 }
 
-img, svg {
+img, .svgProfile {
     vertical-align: initial;
     
 	margin: .1rem;

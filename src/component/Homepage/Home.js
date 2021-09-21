@@ -218,7 +218,7 @@ class Home extends Component {
                 <div class="col-lg-4 col-md-6 col-sm-12  ">
                   <div class="content">
                     <i class="fa fa-book">
-                      <MdPayment />
+                      <MdPayment class="svgHome" />
                     </i>
                     <h3>Payment Methods</h3>
                     <p>
@@ -231,7 +231,7 @@ class Home extends Component {
                 <div class="col-lg-4 col-md-6 col-sm-12">
                   <div class="content">
                     <i class="fa fa-adjust ">
-                      <SiCoursera />
+                      <SiCoursera class="svgHome" />
                     </i>
                     <h3>Wide Open Sources</h3>
                     <p>
@@ -244,7 +244,7 @@ class Home extends Component {
                 <div class="col-lg-4 col-md-6 col-sm-12 ">
                   <div class="content">
                     <i class="fa fa-american-sign-language-interpreting ">
-                      <GiPlatform />
+                      <GiPlatform class="svgHome"/>
                     </i>
                     <h3>Different Platforms</h3>
                     <p>
@@ -257,7 +257,7 @@ class Home extends Component {
                 <div class="col-lg-4 col-md-6 col-sm-12 ">
                   <div class="content">
                     <i class="fa fa-clone">
-                      <GiOpenBook />
+                      <GiOpenBook class="svgHome"/>
                     </i>
                     <h3>Learning Materials</h3>
                     <p>
@@ -270,7 +270,7 @@ class Home extends Component {
                 <div class="col-lg-4 col-md-6 col-sm-12">
                   <div class="content">
                     <i class="fa fa-gitlab">
-                      <FaBlog />
+                      <FaBlog class="svgHome"/>
                     </i>
                     <h3>Blogs,News, and Articles</h3>
                     <p>
@@ -283,7 +283,7 @@ class Home extends Component {
                 <div class="col-lg-4 col-md-6 col-sm-12">
                   <div class="content">
                     <i class="fa fa-google-wallet">
-                      <BiSupport />
+                      <BiSupport class="svgHome"/>
                     </i>
                     <h3>Support</h3>
                     <p>
