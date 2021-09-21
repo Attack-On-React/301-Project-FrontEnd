@@ -8,14 +8,17 @@ class ProfileList extends Component {
     return (
       <>
   <Accordion.Item eventKey={this.props.i}>
-    <Accordion.Header>{this.props.item.courseName}</Accordion.Header>
+    <Accordion.Header><h5>{this.props.item.courseName}</h5></Accordion.Header>
     <Accordion.Body>
-      <img alt="courseImage" src={this.props.item.urlimg}/>
+      <div class="imgprice"> 
+      <img className="imgprofilelist" alt="courseImage" src={this.props.item.urlimg}/>
+      <h6 className="textPrice">Subscription: {this.props.item.price}</h6>
+      </div>
       <div class ="bottons">
-      Price:{this.props.item.price}
-      <Button onClick={()=>{this.props.showProfileModal(this.props.item)}}><FcSynchronize class="svgProfile"/>Update subscription</Button>
-      <Button onClick={()=>{this.props.deleteCourses(this.props.item._id)}}><FcCancel class="svgProfile"/>Delete</Button>
-      <a href="/purchase"><Button> <FcCurrencyExchange class="svgProfile"/> Buy Now</Button></a>
+      
+      <Button className="btnProfile" onClick={()=>{this.props.showProfileModal(this.props.item)}}><FcSynchronize className="svgProfile"/>Update </Button>
+      <Button className="btnProfile" onClick={()=>{this.props.deleteCourses(this.props.item._id)}}><FcCancel className="svgProfile"/>Delete</Button>
+      <a href="/purchase"><Button className="btnProfile"> <FcCurrencyExchange className="svgProfile"/> Buy Now</Button></a>
       </div>
     </Accordion.Body>
   </Accordion.Item>

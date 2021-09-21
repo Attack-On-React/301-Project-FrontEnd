@@ -3,12 +3,12 @@
     flex-direction: row;
     justify-content: center;
 }
-button.btn.btn-primary {
+.addbtn.btn.btn-primary {
     width: 100%;
     transition: trasnform 100ms ease-in-out
 }
 
-.button:hover button.btn.btn-primary{
+.addbtn:hover button.btn.btn-primary{
     background-color: black;
     animation: left-to-right 250ms ease-in forwards ;
 }
@@ -24,13 +24,13 @@ button.btn.btn-primary {
     }
 }
 /*==========================================*/
- .card{
+ .addedCard{
      position: relative;
     transition: transform 50ms ease-in-out infinite;
     /* overflow: hidden; */
 }
 
-.fullCard:hover .card{
+.fullCard:hover .addedCard{
    animation: change-view 0.5s ease-in-out forwards ; 
 }
 
@@ -102,8 +102,7 @@ body {
 
   .courseCards {
     margin: 0 auto;
-    width: 68%;
-    
+    width: 75%;
 }
 .coursesImg {
     background: #fff;
@@ -115,7 +114,7 @@ body {
     position: absolute;
     top: 110px;
 }
-.card-title.h5 {
+.addedCard-title.h5 {
     height: 5rem !important;
     margin-top: 0.5rem;
     margin-bottom: 0 !important;

@@ -21,7 +21,7 @@ class BlogsList extends Component {
               if (i < 4) {
                 return (
                   <div class="cards">
-                    <Card style={{ width: "18rem" }}>
+                    <Card class="blogscards" class="blogcards" style={{ width: "18rem" }}>
                       <div class={"imgDiv"}>
                         <Card.Img
                           variant="top"
@@ -33,7 +33,6 @@ class BlogsList extends Component {
                       <Card.Body>
                         <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
                         <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
@@ -43,12 +42,12 @@ class BlogsList extends Component {
               }
             })}
           </Carousel.Item>
-          {/* <Carousel.Item>
+          <Carousel.Item>
             {this.props.techCrunchArray.map((item, i) => {
               if (i > 3 && i < 8) {
                 return (
-                  <div class="cards">
-                    <Card style={{ width: "18rem" }}>
+                  <div class="cards" >
+                    <Card class="blogscards" style={{ width: "18rem" }}>
                       <div class={"imgDiv"}>
                         <Card.Img
                           variant="top"
@@ -60,7 +59,6 @@ class BlogsList extends Component {
                       <Card.Body>
                         <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
                         <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
@@ -69,7 +67,7 @@ class BlogsList extends Component {
                 );
               }
             })}
-          </Carousel.Item> */}
+          </Carousel.Item>
         </Carousel>
         {/* ------------------------------------------------------------------------------------------------------ */}
         <Carousel fade>
@@ -78,7 +76,7 @@ class BlogsList extends Component {
               if (i < 4) {
                 return (
                   <div class="cards">
-                    <Card style={{ width: "18rem" }}>
+                    <Card class="blogscards" class="blogcards" style={{ width: "18rem" }}>
                       <div class={"imgDiv"}>
                         <Card.Img
                           variant="top"
@@ -90,7 +88,6 @@ class BlogsList extends Component {
                       <Card.Body>
                         <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
                         <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
@@ -105,7 +102,7 @@ class BlogsList extends Component {
               if (i > 3 && i < 8) {
                 return (
                   <div class="cards">
-                  <Card style={{ width: "18rem" }}>
+                  <Card  class="blogscards"style={{ width: "18rem" }}>
                     <div class={"imgDiv"}>
                       <Card.Img
                         variant="top"
@@ -117,7 +114,6 @@ class BlogsList extends Component {
                     <Card.Body>
                       <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                       <div class={"textDiv"}>
-                        <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                       </div>
                       <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                     </Card.Body>
@@ -135,7 +131,7 @@ class BlogsList extends Component {
               if (i < 4) {
                 return (
                   <div class="cards">
-                    <Card style={{ width: "18rem" }}>
+                    <Card  class="blogscards"style={{ width: "18rem" }}>
                       <div class={"imgDiv"}>
                         <Card.Img
                           variant="top"
@@ -147,7 +143,6 @@ class BlogsList extends Component {
                       <Card.Body>
                         <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
                         <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                       </Card.Body>
@@ -162,7 +157,7 @@ class BlogsList extends Component {
               if (i > 3 && i < 8) {
                 return (
                   <div class="cards">
-                  <Card style={{ width: "18rem" }}>
+                  <Card  class="blogscards"style={{ width: "18rem" }}>
                     <div class={"imgDiv"}>
                       <Card.Img
                         variant="top"
@@ -174,7 +169,6 @@ class BlogsList extends Component {
                     <Card.Body>
                       <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                       <div class={"textDiv"}>
-                        <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                       </div>
                       <a href={item.url} target="_blank" ><Button variant="primary">Read More</Button></a>
                     </Card.Body>

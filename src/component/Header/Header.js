@@ -60,7 +60,7 @@ export class Header extends Component {
         return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="py-4" fixed="top" style={{ zIndex: '10' }}>
                 <Container>
-                    <Navbar.Brand href="/">Attack-On-React</Navbar.Brand>
+                    <Navbar.Brand href="/">Study-Station</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
