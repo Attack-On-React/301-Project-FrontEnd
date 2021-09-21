@@ -13,7 +13,7 @@ class ProfileList extends Component {
       Price:{this.props.item.price}
       <Button onClick={()=>{this.props.showProfileModal(this.props.item)}}>Update subscription</Button>
       <Button onClick={()=>{this.props.deleteCourses(this.props.item._id)}}>Delete</Button>
-      <Button>Buy Now</Button>
+      <a href="/purchase"><Button>Buy Now</Button></a>
     </Accordion.Body>
   </Accordion.Item>
 
