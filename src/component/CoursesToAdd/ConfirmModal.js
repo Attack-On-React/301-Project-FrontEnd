@@ -12,7 +12,7 @@ class ConfirmModal extends Component {
           </Modal.Header>
           <Modal.Body>You have added this course to your courses list</Modal.Body>
           <Modal.Footer>
-            <Button variant="primary" onClick={this.props.handleModalClose}>
+            <Button className="addbtn" variant="primary" onClick={this.props.handleModalClose}>
               Ok
             </Button>
           </Modal.Footer>

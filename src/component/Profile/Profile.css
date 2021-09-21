@@ -1,9 +1,10 @@
 
-.accordionstyle{
-	margin: 0 auto ;
-	height:100%;
-	width: 70% ;
-
+.accordionstyle {
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    padding-top: 12%;
+    padding-bottom: 7%;
 }
 .accordion-item {
     background-color: #0d6efd17;
@@ -28,13 +29,13 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
 }
 
-img, .svgProfile {
+.imgprofilelist, .svgProfile {
     vertical-align: initial;
     
 	margin: .1rem;
     
 }
-img {
+.imgprofilelist {
     width: 25%;
     float: revert;
 }
@@ -46,16 +47,29 @@ img {
     padding: 5;
 }
 
-button.btn.btn-primary {
-	width: auto;
-   
-    float: right;
-    transition: trasnform 100ms ease-in-out;
-}
 
 
 .accordion-button:not(.collapsed) {
     color: #9b6fc3;
     background-color: #d1d8e2;
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.bottons {
+    margin-left: 46%;
+}
+button.btnProfile.btn.btn-primary {
+    margin-right: 4%;
+    width: 27%;
+}
+svg.svgProfile {
+    width: 20%;
+}
+.imgprice {
+    display: flex;
+    flex-direction: column;
+
+}
+.textPrice{
+padding-top: 2%;
+padding-left: 2%;
 }

@@ -12,7 +12,7 @@ class CoursesToAddList extends Component {
         
         <Col>
           <div class="fullCard">
-            <Card style={{ width: "18rem" }}>
+            <Card class="addedCard" style={{ width: "18rem" }}>
               <div
                 onClick={() => {
                   this.props.showModal(this.props.item);
@@ -40,9 +40,9 @@ class CoursesToAddList extends Component {
                   <Card.Text>Subscription: {this.props.item.price}</Card.Text>
                 </Card.Body>
               </div>
-              <div class="button">
+              <div class="addedcoursebutton">
                 <ion-icon name="add-outline">
-                  <Button  class="addbtn"
+                  <Button  className="addbtn"
                     variant="primary"
                     onClick={() => {
                       this.props.addCourse(this.props.item);

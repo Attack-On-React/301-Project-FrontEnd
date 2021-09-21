@@ -51,12 +51,15 @@ class Blogs extends Component {
   render() {
     return (
       <>
+      <img class="blogsmainimg" src="https://c4.wallpaperflare.com/wallpaper/589/559/827/blue-blur-gradation-pattern-wallpaper-preview.jpg"/>
+      <h1 class="blogstitle">Blogs</h1>
+      <div class="blogsDiv">
        <BlogsList 
        techCrunchArray={this.state.techCrunchArray}
        topbusinessArray={this.state.topbusinessArray}
        teslaArticlesArray={this.state.teslaArticlesArray}
        />
-        
+        </div>
 
         {/* <Carousel fade>
           {this.state.techCrunchArray.map((item) => {
