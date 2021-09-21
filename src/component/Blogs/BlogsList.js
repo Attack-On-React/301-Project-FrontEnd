@@ -43,7 +43,7 @@ class BlogsList extends Component {
               }
             })}
           </Carousel.Item>
-          <Carousel.Item>
+          {/* <Carousel.Item>
             {this.props.techCrunchArray.map((item, i) => {
               if (i > 3 && i < 8) {
                 return (
@@ -69,7 +69,7 @@ class BlogsList extends Component {
                 );
               }
             })}
-          </Carousel.Item>
+          </Carousel.Item> */}
         </Carousel>
         {/* ------------------------------------------------------------------------------------------------------ */}
         <Carousel fade>
