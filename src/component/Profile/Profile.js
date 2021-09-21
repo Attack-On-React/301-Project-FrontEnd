@@ -4,7 +4,7 @@ import ProfileList from "./ProfileList";
 import Accordion from "react-bootstrap/Accordion";
 import axios from "axios";
 import ProfileListModal from "./ProfileListModal";
-
+import "./Profile.css"
 class Profile extends Component {
   constructor(props) {
     super(props);
@@ -105,6 +105,7 @@ class Profile extends Component {
     // const { user,isAuthenticated } = this.props.auth0;
     return (
       <>
+      <div class="accordionstyle">
         <Accordion defaultActiveKey="0">
           {this.state.addArray &&
             this.state.addArray.map((item, i) => {
@@ -125,6 +126,7 @@ class Profile extends Component {
           show={this.state.showModalFlag}
           handleClose={this.handleClose}
         />
+        </div>
       </>
     );
   }
