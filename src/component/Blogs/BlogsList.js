@@ -4,6 +4,13 @@ import "./BlogList.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
+// this.title=item.title
+// this.author=item.author
+// this.description=item.description
+// this.url=item.url
+// this.urlToImage=item.urlToImage
+
+
 class BlogsList extends Component {
   render() {
     return (
@@ -15,17 +22,20 @@ class BlogsList extends Component {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
-                    <div class={"imgDiv"}>
-                      <Card.Img variant="top" src={item.urlToImage} />
+                      <div class={"imgDiv"}>
+                        <Card.Img
+                          variant="top"
+                          src={item.urlToImage}
+                          style={{ width: "18rem" }}
+                          style={{ height: "10rem" }}
+                        />
                       </div>
                       <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                        <Card.Text>
-                          {item.title}
-                        </Card.Text>
+                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
                       </Card.Body>
                     </Card>
                   </div>
@@ -39,17 +49,20 @@ class BlogsList extends Component {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
-                    <div class={"imgDiv"}>
-                      <Card.Img variant="top" src={item.urlToImage} />
+                      <div class={"imgDiv"}>
+                        <Card.Img
+                          variant="top"
+                          src={item.urlToImage}
+                          style={{ width: "18rem" }}
+                          style={{ height: "10rem" }}
+                        />
                       </div>
                       <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                        <Card.Text>
-                          {item.title}
-                        </Card.Text>
+                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
                       </Card.Body>
                     </Card>
                   </div>
@@ -58,7 +71,7 @@ class BlogsList extends Component {
             })}
           </Carousel.Item>
         </Carousel>
-{/* ------------------------------------------------------------------------------------------------------ */}
+        {/* ------------------------------------------------------------------------------------------------------ */}
         <Carousel fade>
           <Carousel.Item>
             {this.props.topbusinessArray.map((item, i) => {
@@ -66,17 +79,20 @@ class BlogsList extends Component {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
-                    <div class={"imgDiv"}>
-                      <Card.Img variant="top" src={item.urlToImage} />
+                      <div class={"imgDiv"}>
+                        <Card.Img
+                          variant="top"
+                          src={item.urlToImage}
+                          style={{ width: "18rem" }}
+                          style={{ height: "10rem" }}
+                        />
                       </div>
                       <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                        <Card.Text>
-                          {item.title}
-                        </Card.Text>
+                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
                       </Card.Body>
                     </Card>
                   </div>
@@ -90,17 +106,20 @@ class BlogsList extends Component {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
-                    <div class={"imgDiv"}>
-                      <Card.Img variant="top" src={item.urlToImage} />
+                      <div class={"imgDiv"}>
+                        <Card.Img
+                          variant="top"
+                          src={item.urlToImage}
+                          style={{ width: "18rem" }}
+                          style={{ height: "10rem" }}
+                        />
                       </div>
                       <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                        <Card.Text>
-                          {item.title}
-                        </Card.Text>
+                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
                       </Card.Body>
                     </Card>
                   </div>
@@ -117,17 +136,20 @@ class BlogsList extends Component {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
-                    <div class={"imgDiv"}>
-                      <Card.Img variant="top" src={item.urlToImage} />
+                      <div class={"imgDiv"}>
+                        <Card.Img
+                          variant="top"
+                          src={item.urlToImage}
+                          style={{ width: "18rem" }}
+                          style={{ height: "10rem" }}
+                        />
                       </div>
                       <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                        <Card.Text>
-                          {item.title}
-                        </Card.Text>
+                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
                       </Card.Body>
                     </Card>
                   </div>
@@ -141,17 +163,20 @@ class BlogsList extends Component {
                 return (
                   <div class="cards">
                     <Card style={{ width: "18rem" }}>
-                    <div class={"imgDiv"}>
-                      <Card.Img variant="top" src={item.urlToImage} />
+                      <div class={"imgDiv"}>
+                        <Card.Img
+                          variant="top"
+                          src={item.urlToImage}
+                          style={{ width: "18rem" }}
+                          style={{ height: "10rem" }}
+                        />
                       </div>
                       <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title style={{ height: "10rem" }}>{item.title}</Card.Title>
                         <div class={"textDiv"}>
-                        <Card.Text>
-                          {item.title}
-                        </Card.Text>
+                          <Card.Text style={{ height: "3rem" }}>Author: {item.author}</Card.Text>
                         </div>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Button variant="primary"><a href={item.url} target="_blank" >Read More</a></Button>
                       </Card.Body>
                     </Card>
                   </div>
