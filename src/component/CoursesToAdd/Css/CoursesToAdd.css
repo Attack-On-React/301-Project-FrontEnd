@@ -131,11 +131,11 @@ svg {
     padding-right: 3px;
 }
 .btn-primary{
-    background: #27a9f9 !important;
+    background: #0f90fa !important;
     border-color: white !important;
     transition: transform 0.3s ease;
 }
 .btn-primary:hover{
-    background: #25d0fd !important;
+    background: #41cffa !important;
     
 }
