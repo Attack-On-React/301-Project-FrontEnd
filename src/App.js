@@ -5,7 +5,7 @@ import Profile from './component/Profile/Profile';
 import CoursesToAdd from './component/CoursesToAdd/CoursesToAdd';
 import Aboutus from './component/Aboutus/Aboutus';
 import Blogs from './component/Blogs/Blogs';
-import PurchaseForm from './PurchaseForm/PurchaseForm'
+import PurchaseForm from './component/PurchaseForm/PurchaseForm'
 
 import {
   BrowserRouter as Router,

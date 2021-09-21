@@ -34,7 +34,7 @@ button.btn.btn-primary {
    animation: change-view 0.5s ease-in-out forwards ; 
 }
 
-@keyframes change-view {
+/* @keyframes change-view {
 
     0%{
         transform: scale(1);
@@ -53,10 +53,10 @@ button.btn.btn-primary {
     }
     100%{
         transform: scale(1.08);
-    }
+    } */
     
 
-}
+/* } */
 /*===================*/
 
 /*===================*/
@@ -100,3 +100,42 @@ body {
     }
   } */
 
+  .courseCards {
+    margin: 0 auto;
+    width: 68%;
+    
+}
+.coursesImg {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 0 rgb(170 170 170 / 50%);
+    height: 66px;
+    left: 17px;
+    padding: 7px;
+    position: absolute;
+    top: 110px;
+}
+.card-title.h5 {
+    height: 5rem !important;
+    margin-top: 0.5rem;
+    margin-bottom: 0 !important;
+}
+.coursesbackgroundimg{
+    width: 100%;
+    position:fixed ;
+    margin: 0 auto;
+}
+svg {
+    width: 12%;
+    height: 0%;
+    padding-right: 3px;
+}
+.btn-primary{
+    background: #0f90fa !important;
+    border-color: white !important;
+    transition: transform 0.3s ease;
+}
+.btn-primary:hover{
+    background: #41cffa !important;
+    
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
+import "./Css/Modal.css"
 
 class ModalCoursesToAddlist extends Component {
   render() {
@@ -19,9 +20,6 @@ class ModalCoursesToAddlist extends Component {
           <Modal.Footer>
             <Button variant="secondary" onClick={this.props.handleClose}>
               Close
-            </Button>
-            <Button variant="modal" class="modalButton" onClick={this.props.addCourse}>
-              Add to my course
             </Button>
           </Modal.Footer>
         </Modal>
