@@ -15,9 +15,9 @@ class ProfileListModal extends Component {
           <Modal.Body>
             Choice a subscription
               <Form.Select name="SelectSubscription" aria-label="Default select example" defaultValue={this.props.price}>
-                <option value="50$/1 Month">Price:50$/1 Month</option>
-                <option value="90$/2 Month">Price:90$/2 Month</option>
-                <option value="120$/3 Month">Price:120$/3 Month</option>
+                <option value="50$/1 Month">Subscription: 50$/1 Month</option>
+                <option value="90$/2 Month">Subscription: 90$/2 Month</option>
+                <option value="120$/3 Month">Subscription: 120$/3 Month</option>
               </Form.Select>
           </Modal.Body>
           <Modal.Footer>

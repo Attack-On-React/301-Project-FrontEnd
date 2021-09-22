@@ -1,11 +1,10 @@
-
+/* 
 .accordionstyle {
     margin: 0 auto;
     height: 100%;
     width: 70%;
-    padding-top: 12%;
     padding-bottom: 7%;
-}
+} */
 .accordion-item {
     background-color: #0d6efd17;
     border: 1px solid rgba(0,0,0,.125);
@@ -17,7 +16,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    width:15rem;
     padding: 1rem 1.25rem;
     font-size: 1rem;
     color: #212529;
@@ -72,4 +70,35 @@ svg.svgProfile {
 .textPrice{
 padding-top: 2%;
 padding-left: 2%;
+}
+.profilepage {
+
+    padding-top: 7%;
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    padding-bottom: 7%;
+}
+.personinfo {
+    border: solid 1px black;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 10%;
+}
+
+.infoheader {
+    text-align: center;
+    padding-top: 3%;
+    padding-right: 8%;
+}
+.innerinfo {
+    display: flex;
+    justify-content: space-around;
+}
+.modal-content {
+    margin-top: 60%;
+}
+.courseslisttitle{
+    text-align: center;
+
 }

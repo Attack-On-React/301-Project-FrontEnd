@@ -102,9 +102,31 @@ class Profile extends Component {
   }
 
   render() {
-    // const { user,isAuthenticated } = this.props.auth0;
+    const {user,isAuthenticated}=this.props.auth0
+ 
     return (
       <>
+      <div className="profilepage">
+      <div className="personinfo">
+        <div className="infoheader">
+          {isAuthenticated && <img src={user.picture}/>}
+          {isAuthenticated && <p>{user.name}</p>}
+      </div>
+      <div className="innerinfo">
+        <div className="leftsideinfo">
+        {isAuthenticated && <p>First Name: {user.given_name}</p>}
+        {isAuthenticated && <p>Last Name: {user.family_name}</p>}
+      </div>
+      <div className="rightsideinfo">
+      {isAuthenticated && <p>Email: {user.email}</p>}
+      {isAuthenticated && <p>Language: {user.locale}</p>}
+      {isAuthenticated && <p>Nick Name: {user.nickname}</p>}
+      </div>
+      </div>
+      </div>
+      <h3 class="courseslisttitle">- My Courses List -</h3>
+      <br/>
+      <br/>
       <div class="accordionstyle">
         <Accordion defaultActiveKey="0">
           {this.state.addArray &&
@@ -126,6 +148,7 @@ class Profile extends Component {
           show={this.state.showModalFlag}
           handleClose={this.handleClose}
         />
+        </div>
         </div>
       </>
     );

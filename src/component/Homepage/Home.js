@@ -24,10 +24,8 @@ class Home extends Component {
               <h1 calss="outter">Welcome To </h1>
               <p>
                 {" "}
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.{" "}
+                <p className="welcomingtext">We believe in a world where the Internet means opportunity, we care about your future.<span><br/></span> learn new skills online with top educators.</p>
+                <h5 className="weclomingqoute">"Education is not preparation for life, education is life itself"{" "}</h5>
               </p>
             </div>
             <div id="img-div">
@@ -44,13 +42,10 @@ class Home extends Component {
               <img src="https://www.reliablesoft.net/wp-content/uploads/2019/08/digital-marketing-courses.png" />
             </div>
             <div id="second-P">
-              <h1 calss="outter">Welcome To </h1>
+              <h1 className="outtertitle">investing in knowledge and your future </h1>
               <p>
                 {" "}
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.{" "}
+                <p className="welcomingtext">with help of Study Station, create your own path and drive on your skills on your own to achieve what you seek</p>{" "}
               </p>
             </div>
           </section>

@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import { BiAddToQueue } from "react-icons/bi";
-
+import { FcCurrencyExchange } from "react-icons/fc";
 
 class CoursesToAddList extends Component {
   render() {
@@ -12,7 +12,7 @@ class CoursesToAddList extends Component {
         
         <Col>
           <div class="fullCard">
-            <Card class="addedCard" style={{ width: "18rem" }}>
+            <Card className="addedCard" style={{ width: "18rem" }}>
               <div
                 onClick={() => {
                   this.props.showModal(this.props.item);
@@ -29,7 +29,7 @@ class CoursesToAddList extends Component {
                   <Card.Title style={{ height: "7rem" }}>
                     <div class="courseTitle">{this.props.item.courseName}</div>
                   </Card.Title>
-                  <Card.Text>{this.props.item.unv}</Card.Text>
+                  <Card.Text></Card.Text>
                   <div class="coursesImg">
                   <Card.Img
                     variant="top"
@@ -37,7 +37,7 @@ class CoursesToAddList extends Component {
                     src={this.props.item.unvimg}
                   />
                   </div>
-                  <Card.Text>Subscription: {this.props.item.price}</Card.Text>
+                  <Card.Text><FcCurrencyExchange/>: {this.props.item.price}</Card.Text>
                 </Card.Body>
               </div>
               <div class="addedcoursebutton">

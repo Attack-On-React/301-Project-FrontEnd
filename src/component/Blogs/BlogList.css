@@ -1,40 +1,40 @@
-body{
-    padding-top:4%;
-    background-color: white;
+body {
+  padding-top: 4%;
+  background-color: white;
 }
 .imgDiv {
-    max-width: 100%;
-    margin: 0 0;
+  max-width: 100%;
+  margin: 0 0;
 }
-  .carousel-caption{
-    position: initial !important;
-  }
-  .textDiv{
-    color:white;
-    /* background-color: rgba(0, 0, 0, 0.514); */
-    margin-bottom: 18px;
-    padding: 7px 24px;
-  }
-  .active.carousel-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+.carousel-caption {
+  position: initial !important;
+}
+.textDiv {
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.514); */
+  margin-bottom: 18px;
+  padding: 7px 24px;
+}
+.active.carousel-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 a.carousel-control-next {
-  padding-left: 13%;
+  padding-left: 7%;
 }
 a.carousel-control-prev {
-  padding-right: 13%;
+  padding-right: 7%;
 }
 span.carousel-control-prev-icon {
   background-color: black;
   border-radius: 50%;
 }
 span.carousel-control-next-icon {
-    background-color: black;
-    border-radius: 50%;
-  }
+  background-color: black;
+  border-radius: 50%;
+}
 .carousel-inner {
   position: relative;
   width: 100%;
@@ -43,8 +43,8 @@ span.carousel-control-next-icon {
   /* background-color: #ffffff3d; */
   margin-bottom: 5%;
 }
-.blogsDiv{
-  padding-top: 14%;
+.blogsDiv {
+  padding-top: 9%;
 }
 
 img.blogsmainimg {
@@ -52,26 +52,19 @@ img.blogsmainimg {
   width: 100%;
   z-index: -1;
 }
-.blogscards{
-    background: #fff;
-    width: 24em;
-    border-radius: 0.6em;
-    margin: 1em;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0 32px 24px -5px hsl(0deg 0% 0%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
-    transition: all ease 200ms;
-
+.blogscards:hover {
+  box-shadow: 0 16px 18px -5px hsl(0deg 0% 0%),
+    0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
 }
 .card-title.h5 {
   padding-top: 10%;
-  height: 8rem ;
+  height: 8rem;
   margin-top: 0.5rem;
-  margin-bottom: 0 ;
+  margin-bottom: 0;
 }
-.bloglogodiv{
-  margin:0 auto;
-  position: relative
+.bloglogodiv {
+  margin: 0 auto;
+  position: relative;
 }
 
 img.blogslogo {
@@ -79,4 +72,15 @@ img.blogslogo {
   position: absolute;
   left: 40%;
   width: 19%;
+}
+button.readmebtn.btn.btn-primary {
+  float: right;
+  width: 60%;
+}
+svg.svgreadmebtn {
+  width: 29%;
+}
+h3.carouseltitles {
+  padding-bottom: 2.3%;
+  text-align: center;
 }

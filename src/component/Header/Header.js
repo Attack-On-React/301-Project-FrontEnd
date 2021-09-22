@@ -67,9 +67,9 @@ export class Header extends Component {
                         <Nav className="me-auto">
                             <Nav.Link className="navSections" href="/">Home</Nav.Link>
 
-                            <Nav.Link className="navSections"href="/CoursesToAdd">Courses To Add</Nav.Link>
                             <Nav.Link className="navSections"href="/profile">Profile</Nav.Link>
                             <Nav.Link className="navSections"href="/blogs">Blogs</Nav.Link>
+                            <Nav.Link className="navSections"href="/CoursesToAdd">Courses</Nav.Link>
                             {/* <Nav.Link href="/User">User</Nav.Link> */}
                           
                             

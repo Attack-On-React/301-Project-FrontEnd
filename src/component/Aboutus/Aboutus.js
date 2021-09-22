@@ -19,7 +19,7 @@ export class aboutUs extends Component {
     return (
       <main class="mainAboutUs">
         <div class='con'>
-          <img class='hero' src="https://static-cse.canva.com/blob/141399/unique-inspiring-about-page.317625a3.jpg" alt='' />
+          {/* <img class='hero' src="https://static-cse.canva.com/blob/141399/unique-inspiring-about-page.317625a3.jpg" alt='' /> */}
           <Container>
             <h1 class='h1'>
               The Experience Of Working Together As A Team
