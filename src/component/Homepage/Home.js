@@ -44,7 +44,7 @@ class Home extends Component {
               <img src="https://www.reliablesoft.net/wp-content/uploads/2019/08/digital-marketing-courses.png" />
             </div>
             <div id="second-P">
-              <h1 calss="outter">Welcome To </h1>
+              <h1 calss="outter">Headline </h1>
               <p>
                 {" "}
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -198,7 +198,7 @@ class Home extends Component {
               </div>
             </div>
           </section> */}
-          <section class="services text-center" id="services">
+          <section class="services text-center section" id="services">
             <div class="headTitle">
               <h2>OUR SERVICES</h2>
               <svg width="180px" height="20px">
