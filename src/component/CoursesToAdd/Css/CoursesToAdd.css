@@ -3,12 +3,13 @@
     flex-direction: row;
     justify-content: center;
 }
-button.btn.btn-primary {
+.addbtn.btn.btn-primary {
     width: 100%;
-    transition: trasnform 100ms ease-in-out
+    transition: trasnform 100ms ease-in-out;
+    border: none;
 }
 
-.button:hover button.btn.btn-primary{
+.addbtn:hover button.btn.btn-primary{
     background-color: black;
     animation: left-to-right 250ms ease-in forwards ;
 }
@@ -24,17 +25,20 @@ button.btn.btn-primary {
     }
 }
 /*==========================================*/
- .card{
+ .addedCard{
      position: relative;
     transition: transform 50ms ease-in-out infinite;
     /* overflow: hidden; */
 }
 
-.fullCard:hover .card{
+.fullCard:hover .addedCard{
    animation: change-view 0.5s ease-in-out forwards ; 
+   box-shadow: 0 16px 18px -5px hsl(0deg 0% 0%),
+   0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
+
 }
 
-@keyframes change-view {
+/* @keyframes change-view {
 
     0%{
         transform: scale(1);
@@ -53,10 +57,10 @@ button.btn.btn-primary {
     }
     100%{
         transform: scale(1.08);
-    }
+    } */
     
 
-}
+/* } */
 /*===================*/
 
 /*===================*/
@@ -100,3 +104,56 @@ body {
     }
   } */
 
+  .courseCards {
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.coursesImg {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 0 rgb(170 170 170 / 50%);
+    height: 66px;
+    left: 17px;
+    padding: 7px;
+    position: absolute;
+    top: 110px;
+}
+.addedCard-title.h5 {
+    height: 5rem !important;
+    margin-top: 0.5rem;
+    margin-bottom: 0 !important;
+}
+.coursesbackgroundimg{
+    width: 100%;
+    position:fixed ;
+    margin: 0 auto;
+}
+svg {
+    width: 12%;
+    height: 0%;
+    padding-right: 3px;
+}
+.btn-primary{
+    background: #0f90fa !important;
+    border-color: white !important;
+    transition: transform 0.3s ease;
+}
+.btn-primary:hover{
+    background: #41cffa !important;
+    
+}
+
+.modal-content {
+    padding: 0rem 3rem;
+    padding-top: 2rem;
+}
+.modaltitlecourses{
+    padding-top: 16px;
+    padding-bottom: 5px;
+}
+.modalbodycourses{
+        line-height: 29px;
+        font-size: 21px;
+}

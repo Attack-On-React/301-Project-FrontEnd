@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+}
+h1, h2{
+    font-weight: 600;
+}
+p{
+    font-size: large;
+    font-weight: 500;
+}
+nav.py-4.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+    height: 12%;
+}
+
+
+
+button.logingButton {
+    position: relative;
+    left: 85%;
+}
+
+.navbar-nav {
+    width: 30%;
+    position: relative;
+}
+
+
+
+nav.navbar.navbar-expand.navbar-dark.bg-dark {
+    height: 5rem;
+}
+
+.container {
+    max-width: 90%;
+}
+
+.container img {
+    width: 36%;
+}
+
+.me-auto.navbar-nav {
+    height: 5rem;
+    width: 81%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: larger;
+    align-items: center;
+}
+
+.navbar-nav {
+    width: 18%;
+    padding: 0 8% 0 0;
+}
+
+button.logingButton {
+    border: none;
+    background: #509bbb;
+    color: whitesmoke;
+    font-weight: 600;
+    width: 100%;
+    box-shadow: 0 0 6px 1px gray;
+}
+
+button.logingButton:hover {
+    background: #407c96;
+}
+button.logingButton {
+    font-size: initial;
+    height: 2rem;
+}
+a.nav-link:hover {
+    background: #67c1e7de;
+}
+a.nav-link {
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    width: 13%;
+    text-align: initial;
+    justify-content: space-around;
+}

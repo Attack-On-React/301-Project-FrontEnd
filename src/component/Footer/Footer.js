@@ -32,41 +32,22 @@ export class Footer extends Component {
       <div className="main-footer">
         <div className="container">
           <div className="row">
-            <div className="col-5">
-              <h2>About Us !?</h2>
-              <h5 className="list-unstyled">
-                Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adip
-                Lorem ipsum dolor sit amet, consectetur adip
-                Lorem ipsum dolor sit amet, consectetur adip
-                Lorem ipsum dolor sit amet, consectetur adip
-                Lorem ipsum dolor sit amet, consectetur adip
-                Lorem ipsum dolor sit amet, consectetur adip
-                Lorem ipsum dolor sit amet, consectetur adip
-                amet, consectetur adip
-                Lorem ipsum dolor sit amet, consectetur adip
-                Lorem ipsum dolor sit amet, consectetur adip
-                Lorem ipsum dolor sit amet, consectetur adip
-              </h5>
-            </div>
             <div className="col-3">
-              <h4>Services</h4>
               <ui className="list-unstyled">
                 <li><Nav.Link className="servicesFooter" href="/">Home</Nav.Link></li>
                 <li><Nav.Link className="servicesFooter" href="/Profile">Profile</Nav.Link></li>
-                <li><Nav.Link className="servicesFooter" href="/CoursesToAdd">CoursesToAdd</Nav.Link></li>
-                {
-
-                }
+                <li><Nav.Link className="servicesFooter" href="/blogs">Blogs</Nav.Link></li>
+                <li><Nav.Link className="servicesFooter" href="/CoursesToAdd">Courses</Nav.Link></li>
                 <li><Nav.Link className="servicesFooter" href="/Aboutus">About Us</Nav.Link></li>
               </ui>
             </div>
             <div className="col-4">
-              <h4>Social Media</h4>
               <ui className="list-unstyled">
                 <li><span className="icon"><AiFillGithub /></span> Github</li>
                 <li><span className="icon"><AiFillLinkedin /></span> Linkedin</li>
               </ui>
             </div>
+            <img class="footer-logo" src="https://i.ibb.co/ByB4ng8/04b2259c6ef84b5f872e6c76db6b9e01-1.png"/>
           </div>
           <hr />
           <div className="row">

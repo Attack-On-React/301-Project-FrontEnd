@@ -51,12 +51,18 @@ class Blogs extends Component {
   render() {
     return (
       <>
+      {/* <div class="bloglogodiv"> */}
+      {/* <img class="blogslogo" src="https://freepngimg.com/thumb/blogging/4-2-blogging-picture.png"/> */}
+      {/* </div> */}
+      {/* <img class="blogsmainimg" src="https://c4.wallpaperflare.com/wallpaper/589/559/827/blue-blur-gradation-pattern-wallpaper-preview.jpg"/> */}
+
+      <div class="blogsDiv">
        <BlogsList 
        techCrunchArray={this.state.techCrunchArray}
        topbusinessArray={this.state.topbusinessArray}
        teslaArticlesArray={this.state.teslaArticlesArray}
        />
-        
+        </div>
 
         {/* <Carousel fade>
           {this.state.techCrunchArray.map((item) => {

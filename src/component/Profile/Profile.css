@@ -1,0 +1,104 @@
+/* 
+.accordionstyle {
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    padding-bottom: 7%;
+} */
+.accordion-item {
+    background-color: #0d6efd17;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.accordion-header {
+    margin: 0 auto;
+}
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #f4f5f7d9;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+
+.imgprofilelist, .svgProfile {
+    vertical-align: initial;
+    
+	margin: .1rem;
+    
+}
+.imgprofilelist {
+    width: 25%;
+    float: revert;
+}
+.btn-primary {
+    margin: .1%;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6bfd;
+    padding: 5;
+}
+
+
+
+.accordion-button:not(.collapsed) {
+    color: #9b6fc3;
+    background-color: #d1d8e2;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.bottons {
+    margin-left: 46%;
+}
+button.btnProfile.btn.btn-primary {
+    margin-right: 4%;
+    width: 27%;
+}
+svg.svgProfile {
+    width: 20%;
+}
+.imgprice {
+    display: flex;
+    flex-direction: column;
+
+}
+.textPrice{
+padding-top: 2%;
+padding-left: 2%;
+}
+.profilepage {
+
+    padding-top: 7%;
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    padding-bottom: 7%;
+}
+.personinfo {
+    border: solid 1px black;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 10%;
+}
+
+.infoheader {
+    text-align: center;
+    padding-top: 3%;
+    padding-right: 8%;
+}
+.innerinfo {
+    display: flex;
+    justify-content: space-around;
+}
+.modal-content {
+    margin-top: 60%;
+}
+.courseslisttitle{
+    text-align: center;
+
+}

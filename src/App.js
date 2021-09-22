@@ -5,6 +5,7 @@ import Profile from './component/Profile/Profile';
 import CoursesToAdd from './component/CoursesToAdd/CoursesToAdd';
 import Aboutus from './component/Aboutus/Aboutus';
 import Blogs from './component/Blogs/Blogs';
+import PurchaseForm from './component/PurchaseForm/PurchaseForm'
 
 import {
   BrowserRouter as Router,
@@ -30,6 +31,9 @@ class App extends Component {
 
             <Route exact path="/CoursesToAdd">
               <CoursesToAdd />
+            </Route>
+            <Route exact path="/purchase">
+              <PurchaseForm/>
             </Route>
 
             <Route exact path="/profile">

@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import ModalCoursesToAddlist from './ModalCoursesToAddlist'
 import { withAuth0 } from '@auth0/auth0-react';
 import "./Css/CoursesToAdd.css"
+import ConfirmModal from './ConfirmModal';
 
 
 class CoursesToAdd extends Component {
@@ -16,6 +17,7 @@ class CoursesToAdd extends Component {
             addArray:[],
             courseArray:[],
             showflag:false,
+            showModalFlag:false,
             courseName:"",
             urlimg:"",
             unv:"",
@@ -81,6 +83,7 @@ class CoursesToAdd extends Component {
         .then(result=>{
             this.setState({
              addArray:result.data,
+             showModalFlag:true
 
             })
             console.log(this.state.addArray);
@@ -90,16 +93,26 @@ class CoursesToAdd extends Component {
     })
     }
 
+    handleModalClose=()=>{
+        this.setState({
+            showModalFlag:false
+        })
+    }
+
+    
     //--------------------------------------------
     render() {
         return (
             <>
-            <h1>These our courses</h1>
-            <Row xs={1} md={3} className="g-4">
+            {/* <img class="coursesbackgroundimg" alt="background" src="https://www.wallpaperup.com/uploads/wallpapers/2015/01/18/590207/e0b7a05aa7f598ff0d960df2a0f44003-1000.jpg"/> */}
+            {/* <h1>These our courses</h1> */}
+            <div class="courseCards">
+            <Row xs={1} md={4} className="g-4">
                 {this.state.courseArray.map(item=>{
                     return <CoursesToAddList item={item} showModal={this.showModal} addCourse={this.addCourse} />
                 })}
                 </Row>
+                </div>
                 <ModalCoursesToAddlist  showflag={this.state.showflag} handleClose={this.handleClose}
                 courseName={this.state.courseName}
                 urlimg={this.state.urlimg}
@@ -109,6 +122,10 @@ class CoursesToAdd extends Component {
                 price={this.state.price}
                 addCourse={this.addCourse}
                 />
+                <ConfirmModal 
+                 show={this.state.showModalFlag}
+                 handleModalClose={this.handleModalClose}
+                  />
             </>
         );
     }
