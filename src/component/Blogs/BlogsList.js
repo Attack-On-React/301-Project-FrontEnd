@@ -21,7 +21,7 @@ class BlogsList extends Component {
               if (i < 4) {
                 return (
                   <div class="cards">
-                    <Card class="blogscards" class="blogcards" style={{ width: "18rem" }}>
+                    <Card className="blogscards"  style={{ width: "18rem" }}>
                       <div class={"imgDiv"}>
                         <Card.Img
                           variant="top"
@@ -47,7 +47,7 @@ class BlogsList extends Component {
               if (i > 3 && i < 8) {
                 return (
                   <div class="cards" >
-                    <Card class="blogscards" style={{ width: "18rem" }}>
+                    <Card className="blogscards" style={{ width: "18rem" }}>
                       <div class={"imgDiv"}>
                         <Card.Img
                           variant="top"
@@ -76,7 +76,7 @@ class BlogsList extends Component {
               if (i < 4) {
                 return (
                   <div class="cards">
-                    <Card class="blogscards" class="blogcards" style={{ width: "18rem" }}>
+                    <Card className="blogscards" class="blogcards" style={{ width: "18rem" }}>
                       <div class={"imgDiv"}>
                         <Card.Img
                           variant="top"
@@ -102,7 +102,7 @@ class BlogsList extends Component {
               if (i > 3 && i < 8) {
                 return (
                   <div class="cards">
-                  <Card  class="blogscards"style={{ width: "18rem" }}>
+                  <Card  className="blogscards"style={{ width: "18rem" }}>
                     <div class={"imgDiv"}>
                       <Card.Img
                         variant="top"
@@ -131,7 +131,7 @@ class BlogsList extends Component {
               if (i < 4) {
                 return (
                   <div class="cards">
-                    <Card  class="blogscards"style={{ width: "18rem" }}>
+                    <Card  className="blogscards"style={{ width: "18rem" }}>
                       <div class={"imgDiv"}>
                         <Card.Img
                           variant="top"
@@ -157,7 +157,7 @@ class BlogsList extends Component {
               if (i > 3 && i < 8) {
                 return (
                   <div class="cards">
-                  <Card  class="blogscards"style={{ width: "18rem" }}>
+                  <Card  className="blogscards"style={{ width: "18rem" }}>
                     <div class={"imgDiv"}>
                       <Card.Img
                         variant="top"

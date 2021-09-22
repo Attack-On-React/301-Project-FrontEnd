@@ -44,17 +44,15 @@ span.carousel-control-next-icon {
   margin-bottom: 5%;
 }
 .blogsDiv{
-  padding-top: 3%;
+  padding-top: 14%;
 }
-.blogstitle{
-  padding-top:3%;
-}
+
 img.blogsmainimg {
   position: fixed;
   width: 100%;
   z-index: -1;
 }
-.blogcards{
+.blogscards{
     background: #fff;
     width: 24em;
     border-radius: 0.6em;
@@ -70,4 +68,15 @@ img.blogsmainimg {
   height: 8rem ;
   margin-top: 0.5rem;
   margin-bottom: 0 ;
+}
+.bloglogodiv{
+  margin:0 auto;
+  position: relative
+}
+
+img.blogslogo {
+  padding-top: 2%;
+  position: absolute;
+  left: 40%;
+  width: 19%;
 }

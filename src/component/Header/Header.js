@@ -45,6 +45,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import LogoutButton from './LogoutButton';
+import "./Header.css"
 // import User from './User/User';
 
 
@@ -60,15 +61,15 @@ export class Header extends Component {
         return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="py-4" fixed="top" style={{ zIndex: '10' }}>
                 <Container>
-                    <Navbar.Brand href="/">Study-Station</Navbar.Brand>
+                    <Navbar.Brand className="navtitle" href="/">Study-Station</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link className="navSections" href="/">Home</Nav.Link>
 
-                            <Nav.Link href="/CoursesToAdd">Courses To Add</Nav.Link>
-                            <Nav.Link href="/profile">Profile</Nav.Link>
-                            <Nav.Link href="/blogs">Blogs</Nav.Link>
+                            <Nav.Link className="navSections"href="/CoursesToAdd">Courses To Add</Nav.Link>
+                            <Nav.Link className="navSections"href="/profile">Profile</Nav.Link>
+                            <Nav.Link className="navSections"href="/blogs">Blogs</Nav.Link>
                             {/* <Nav.Link href="/User">User</Nav.Link> */}
                           
                             
