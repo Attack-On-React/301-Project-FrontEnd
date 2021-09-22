@@ -23,7 +23,7 @@ class Profile extends Component {
       const email = user.email;
 
       await axios
-        .get(`http://localhost:3010/profiledata?email=${email}`)
+        .get(`https://study-station.herokuapp.com/profiledata?email=${email}`)
         .then((result) => {
           this.setState({
             addArray: result.data,
@@ -41,7 +41,7 @@ class Profile extends Component {
       const email = user.email;
 
       await axios
-        .get(`http://localhost:3010/profiledata?email=${email}`)
+        .get(`https://study-station.herokuapp.com/profiledata?email=${email}`)
         .then((result) => {
           this.setState({
             addArray: result.data,
@@ -63,7 +63,7 @@ class Profile extends Component {
       email:email
     }
      axios
-      .put(`http://localhost:3010/updatecourse/${this.state.id}`,obj)
+      .put(`https://study-station.herokuapp.com/updatecourse/${this.state.id}`,obj)
       .then((result) => {
         this.setState({
           addArray: result.data,
@@ -90,7 +90,7 @@ class Profile extends Component {
     const { user } = this.props.auth0;
     const email = user.email;
     axios
-    .delete(`http://localhost:3010/deletecourse/${id}?email=${email}`)
+    .delete(`https://study-station.herokuapp.com/deletecourse/${id}?email=${email}`)
     .then(result=>{
       this.setState({
         addArray:result.data
