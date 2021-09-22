@@ -16,6 +16,10 @@ class Home extends Component {
       <>
         <main class="main-home">
           <section class="first-sec section">
+              <div class="shape1"></div>
+              <div class="shape2"></div>
+              <div class="shape3"></div>
+
             <div id="first-P">
               <h1 calss="outter">Welcome To </h1>
               <p>
@@ -33,6 +37,9 @@ class Home extends Component {
           </section>
           <hr />
           <section class="second-sec section">
+          <div class="shape1"></div>
+              <div class="shape2"></div>
+              <div class="shape3"></div>
             <div id="img-div">
               <img src="https://www.reliablesoft.net/wp-content/uploads/2019/08/digital-marketing-courses.png" />
             </div>
