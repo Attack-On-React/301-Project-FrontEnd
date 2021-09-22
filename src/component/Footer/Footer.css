@@ -25,3 +25,14 @@
   .servicesFooter{
       color: whitesmoke;
   }
+  .main-footer{
+      position: relative;
+  }
+
+  img.footer-logo {
+    width: 10%;
+    height: fit-content;
+    position: absolute;
+    right: 11%;
+    filter: contrast(0.5);
+}
