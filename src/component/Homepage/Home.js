@@ -193,7 +193,7 @@ class Home extends Component {
               </div>
             </div>
           </section> */}
-          <section class="services text-center" id="services">
+          <section class="services text-center section" id="services">
             <div class="headTitle">
               <h2>OUR SERVICES</h2>
               <svg width="180px" height="20px">
