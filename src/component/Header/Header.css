@@ -1,0 +1,23 @@
+
+button.logingButton {
+    background-color: #9b9d9e;
+    border: none;
+    padding: 2px 21px;
+    border-radius: 3%;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0px 0px 6px #84848460, -2px -1px 3px #ffffff65;
+    transition: transform 0.5s ease;
+}
+button.logingButton:hover{
+    background-color: rgb(94, 94, 94);
+}
+
+
+
+nav.py-4.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+    font-family: cursive !important;
+}
+.navtitle {
+    text-shadow: 4px 4px 6px #ffffff60, 0px 0px 7px #ffffff65;
+}
