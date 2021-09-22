@@ -29,7 +29,7 @@ section{
 #first-P h1::after{
     color: rgb(26, 145, 250);
     content: "Study Station";
-    animation: change-content 1.5s ease-in forwards infinite alternate;
+    animation: change-content 1.5s ease-in-out forwards infinite alternate ;
 }
 
 @keyframes change-content {
@@ -89,7 +89,63 @@ section{
     }
 }
 
+.first-sec .shape1 {
+    position: absolute;
+    left: 95px;
+    top: -10px;
+    z-index: -1;
+    width: 300px;
+    height: 300px;
+    background: #427de347;
+    border-radius: 50% 50% 50% 50%;
+}
 
+.first-sec .shape2 {
+    position: absolute;
+    left: 2px;
+    top: 115px;
+    z-index: -1;
+    width: 230px;
+    height: 230px;
+    background: #cfccdf61;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.first-sec .shape3 {
+    position: absolute;
+    left: 6%;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border-bottom: solid 1px #1a91fa;
+    border-left: solid 1px #1a91fa;
+}
+
+/*================================*/
+.second-sec{
+    position: relative;
+}
+.second-sec .shape1 {
+    position: absolute;
+    right: 7%;
+    top: 6%;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    background: #fb394b3d;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.second-sec .shape2 {
+    position: absolute;
+    right: 14%;
+    top: 27%;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    background: #ffd25152;
+    border-radius: 50% 50% 50% 50%;
+}
 /*==================*/
 #Cards{
     display: flex;
