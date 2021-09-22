@@ -382,9 +382,11 @@ animation-fill-mode: both;
 }
 p.welcomingtext {
     font-size: 19px;
+    font-weight: 600;
 }
 h5.weclomingqoute {
     color: #1a91fa;
+    font-weight: 600;
 }
 h1.outtertitle {
     text-align: -webkit-left !important;

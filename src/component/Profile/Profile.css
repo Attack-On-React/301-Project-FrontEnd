@@ -102,3 +102,13 @@ padding-left: 2%;
     text-align: center;
 
 }
+h6.textPrice {
+    font-weight: 600;
+}
+.accordingtitle{
+    font-weight: 600;
+}
+.info-titles{
+    font-weight: 600 !important;
+
+}

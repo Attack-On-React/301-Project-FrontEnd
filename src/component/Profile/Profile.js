@@ -110,17 +110,17 @@ class Profile extends Component {
       <div className="personinfo">
         <div className="infoheader">
           {isAuthenticated && <img src={user.picture}/>}
-          {isAuthenticated && <p>{user.name}</p>}
+          {isAuthenticated && <p className="info-titles">{user.name}</p>}
       </div>
       <div className="innerinfo">
         <div className="leftsideinfo">
-        {isAuthenticated && <p>First Name: {user.given_name}</p>}
-        {isAuthenticated && <p>Last Name: {user.family_name}</p>}
+        {isAuthenticated && <p className="info-titles">First Name: {user.given_name}</p>}
+        {isAuthenticated && <p className="info-titles">Last Name: {user.family_name}</p>}
       </div>
       <div className="rightsideinfo">
-      {isAuthenticated && <p>Email: {user.email}</p>}
-      {isAuthenticated && <p>Language: {user.locale}</p>}
-      {isAuthenticated && <p>Nick Name: {user.nickname}</p>}
+      {isAuthenticated && <p className="info-titles">Email: {user.email}</p>}
+      {isAuthenticated && <p className="info-titles">Language: {user.locale}</p>}
+      {isAuthenticated && <p className="info-titles">Nick Name: {user.nickname}</p>}
       </div>
       </div>
       </div>

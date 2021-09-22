@@ -8,7 +8,7 @@ class ProfileList extends Component {
     return (
       <>
   <Accordion.Item eventKey={this.props.i}>
-    <Accordion.Header><h5>{this.props.item.courseName}</h5></Accordion.Header>
+    <Accordion.Header><h5 className="accordingtitle">{this.props.item.courseName}</h5></Accordion.Header>
     <Accordion.Body>
       <div class="imgprice"> 
       <img className="imgprofilelist" alt="courseImage" src={this.props.item.urlimg}/>
