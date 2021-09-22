@@ -52,7 +52,7 @@ class CoursesToAdd extends Component {
       // Method to self invoke to render the data from the server side
       componentDidMount=()=>{
         axios
-        .get("http://localhost:3010/coursesData")
+        .get("https://study-station.herokuapp.com/coursesData")
         .then(result=>{
             this.setState({
                 courseArray:result.data
@@ -79,7 +79,7 @@ class CoursesToAdd extends Component {
         console.log(obj);
         
         axios
-        .post("http://localhost:3010/addcourse",obj)
+        .post("https://study-station.herokuapp.com/addcourse",obj)
         .then(result=>{
             this.setState({
              addArray:result.data,

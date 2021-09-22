@@ -17,7 +17,7 @@ class Blogs extends Component {
 
   componentDidMount = () => {
     axios
-      .get("http://localhost:3010/TechCrunch")
+      .get("https://study-station.herokuapp.com/TechCrunch")
       .then((result) => {
         this.setState({
           techCrunchArray: result.data,
@@ -27,7 +27,7 @@ class Blogs extends Component {
         console.log(err);
       });
     axios
-      .get("http://localhost:3010/Topbusiness")
+      .get("https://study-station.herokuapp.com/Topbusiness")
       .then((result) => {
         this.setState({
           topbusinessArray: result.data,
@@ -37,7 +37,7 @@ class Blogs extends Component {
         console.log(err);
       });
     axios
-      .get("http://localhost:3010/TeslaArticles")
+      .get("https://study-station.herokuapp.com/TeslaArticles")
       .then((result) => {
         this.setState({
           teslaArticlesArray: result.data,
