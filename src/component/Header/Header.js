@@ -62,23 +62,23 @@ export class Header extends Component {
           <Navbar.Brand href="#home"><img src="https://i.ibb.co/ByB4ng8/04b2259c6ef84b5f872e6c76db6b9e01-1.png"/></Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/CoursesToAdd">Courses</Nav.Link>
-            <Nav.Link href="/blogs">Blogs</Nav.Link>
             <Nav.Link href="/profile">Profile</Nav.Link>
+            <Nav.Link href="/blogs">Blogs</Nav.Link>
+            <Nav.Link href="/CoursesToAdd">Courses</Nav.Link>
             <Nav.Link href="/aboutus">About Us</Nav.Link>
             {
                       !isAuthenticated && (
                           <Nav>
-                              <LoginButton />
+                              <LoginButton className="loginingbtn"/>
                           </Nav>
                       )
                   }
 
-          </Nav>
+          
           {
                       isAuthenticated && (
                           <Nav>
-                              <LogoutButton />
+                              <LogoutButton className="loginingbtn"/>
                               {/* <User
 
                                   userEmailInfo={this.props.userEmailInfo}
@@ -87,6 +87,7 @@ export class Header extends Component {
                           </Nav>
                       )
                   }
+                  </Nav>
         </Container>
       </Navbar>
 

@@ -379,3 +379,12 @@ animation-fill-mode: both;
     }
     
 }
+p.welcomingtext {
+    font-size: 19px;
+}
+h5.weclomingqoute {
+    color: #1a91fa;
+}
+h1.outtertitle {
+    text-align: -webkit-left !important;
+}
