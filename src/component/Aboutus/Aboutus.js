@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import img from './img/Rihan.jpg';
 import Rami from './img/Rami.png';
 import Qais from './img/Qais.jpg';
-import Bashar from './img/Bashar.png';
+import Bashar from './img/Bashar.jpg';
 import Aseel from './img/Aseel.jpg';
 import Nedal from './img/Nedal.jpg';
 import imgGitHub from './img/003-github.png'
