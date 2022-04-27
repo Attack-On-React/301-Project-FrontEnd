@@ -21,7 +21,7 @@ class App extends Component {
         <Router>
           <Header />
           <Switch>
-
+          <React.StrictMode>
             <Route exact path="/">
       <Home/>
             </Route>
@@ -43,8 +43,7 @@ class App extends Component {
             <Route exact path="/Aboutus">
               <Aboutus />
             </Route>
-
-           
+            </React.StrictMode>
           </Switch>
           <Footer />
         </Router>

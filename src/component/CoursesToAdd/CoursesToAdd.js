@@ -106,8 +106,8 @@ class CoursesToAdd extends Component {
             <>
             {/* <img class="coursesbackgroundimg" alt="background" src="https://www.wallpaperup.com/uploads/wallpapers/2015/01/18/590207/e0b7a05aa7f598ff0d960df2a0f44003-1000.jpg"/> */}
             {/* <h1>These our courses</h1> */}
-            <div class="courseCards">
-            <Row xs={1} md={4} className="g-4">
+            <div class="container courseCards">
+            <Row xs={1}  md={2} lg={3} xxl={4} className="g-4">
                 {this.state.courseArray.map(item=>{
                     return <CoursesToAddList item={item} showModal={this.showModal} addCourse={this.addCourse} />
                 })}

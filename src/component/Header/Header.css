@@ -4,22 +4,75 @@ body{
     font-family: 'Ubuntu', sans-serif;
     padding: 0;
 }
+
 h1, h2{
     font-weight: 600;
 }
+
 p{
     font-size: large;
     font-weight: 500;
 }
-nav.py-4.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
-    height: 12%;
+
+.navContainer {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    height: inherit;
+    align-items: center;
 }
 
+nav {
+    background-color: #212529;
+    height: 75px;
+}
 
+ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+.mobileNavbar li a
+{
+    color: white;
+    text-decoration: none;
+    width: inherit;
+    text-align: center;
+}
 
-button.logingButton {
+img#logo-image {
+    max-width: 3.9%;
     position: relative;
-    left: 85%;
+}
+
+li {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-item{
+    width:8%
+}
+.nav-item a:hover{
+    color: white;
+}
+
+.nav-item:hover {
+    background: #67c1e7de;
+}
+
+.mobileNavbarItem{
+    width: 100%;
+    padding: 9px 0;
+}
+
+.mobileNavbarItem a:hover{
+    color: white;
+}
+
+.mobileNavbarItem:hover{
+    background-color:#407c96 ;
 }
 
 .navbar-nav {
@@ -28,58 +81,130 @@ button.logingButton {
 }
 
 
-
 nav.navbar.navbar-expand.navbar-dark.bg-dark {
     height: 5rem;
 }
 
-.container {
-    max-width: 90%;
-}
-
-.container img {
-    width: 36%;
-}
-
-.me-auto.navbar-nav {
-    height: 5rem;
-    width: 81%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: larger;
-    align-items: center;
-}
-
-.navbar-nav {
-    width: 18%;
-    padding: 0 8% 0 0;
-}
 
 button.logingButton {
+    position: relative;
     border: none;
     background: #509bbb;
     color: whitesmoke;
     font-weight: 600;
-    width: 100%;
+    padding: 6px 23px;
     box-shadow: 0 0 6px 1px gray;
+    font-size: initial;
 }
 
 button.logingButton:hover {
     background: #407c96;
 }
-button.logingButton {
-    font-size: initial;
-    height: 2rem;
+
+
+.headerSVG{
+    display: none;
 }
-a.nav-link:hover {
-    background: #67c1e7de;
+
+.mobileNavbar{
+    display: none;
 }
-a.nav-link {
-    height: -webkit-fill-available;
-    display: flex;
-    align-items: center;
-    width: 13%;
-    text-align: initial;
-    justify-content: space-around;
+
+
+@media only screen and (max-width: 1300px) {
+
+    img#logo-image {
+        max-width: 5.6%;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+
+    ul li a{
+        font-size: small;
+    }
+
+    button.logingButton{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    button.logingButton{
+        padding: 4px 20px;
+    }
+
+    img#logo-image {
+        max-width: 7%;
+    }
+}
+
+@media only screen and (max-width:760px){
+
+    img#logo-image {
+        max-width: 8.5%;
+    }
+
+    .desktopNavbar{
+        display: none;
+    }
+
+    .headerSVG{
+        height:-webkit-fill-available !important;
+        width: auto !important;
+        padding-top: 27px;
+        display: block;
+        position: relative;
+    }
+
+    .mobileNavbar {
+        display: flex;
+        background-color: #212529;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        padding: 0px;
+        align-items: center;
+        width: 200px;
+    }
+
+    .navContainer{
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .loginingbtnMobile{
+    font-size: small;
+    min-width: 202px;
+    background: #509bbb;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 6px 0px;
+    box-shadow: 0 0 6px 1px gray;
+    }
+
+    .loginingbtnMobile:hover {
+        background: #407c96;
+    }
+
+}
+@media only screen and (max-width:650px){
+
+    img#logo-image {
+        max-width: 100%;
+        width:11%
+    }
+
+}
+@media only screen and (max-width:450px){
+
+    img#logo-image {
+        width: 15%;
+    }
+
 }

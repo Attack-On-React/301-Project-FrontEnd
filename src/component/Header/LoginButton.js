@@ -1,14 +1,14 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
-function LoginButton() {
+function LoginButton(props) {
   const {
     isAuthenticated,
     loginWithRedirect,
   } = useAuth0();
 
   return !isAuthenticated && (
-    <button class="logingButton" onClick={loginWithRedirect}>Log in</button>
+    <button class={props.className} onClick={loginWithRedirect}>Log in</button>
   );
 }
 

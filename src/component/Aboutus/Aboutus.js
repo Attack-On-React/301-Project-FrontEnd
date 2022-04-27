@@ -9,6 +9,7 @@ import Aseel from './img/Aseel.jpg';
 import Nedal from './img/Nedal.jpg';
 import imgGitHub from './img/003-github.png'
 import imgLinkIn from './img/001-linkedin.png'
+import {Row,Col} from 'react-bootstrap';
 import './AboutUs.css'
 
 import Container from 'react-bootstrap/Container'
@@ -33,7 +34,8 @@ export class aboutUs extends Component {
           <h1 class='team'>Our Team</h1>
           <div class='general'>
 
-            <div class='cards'>
+            <Row xs={1} md={2} lg={3} className="g-4">
+              <Col>
               <Card style={{ width: '20rem' }}>
                 <Card.Img class='profileImg' variant="top" style={{ height: '350px' }} src={img} />
                 <Card.Body>
@@ -46,8 +48,8 @@ export class aboutUs extends Component {
                   <Card.Link href="https://github.com/Rihanfoudeh" target="_blank"><img style={{ width: '1.5rem' }} src={imgGitHub} alt="" /></Card.Link>
                 </Card.Body>
               </Card>
-
-              <div>
+              </Col>
+              <Col>
                 <Card style={{ width: '20rem' }}>
                   <Card.Img class='profileImg' variant="top" style={{ height: '350px' }} src={Rami} />
                   <Card.Body>
@@ -63,11 +65,11 @@ export class aboutUs extends Component {
                 </Card>
 
 
-              </div>
+              </Col>
 
 
 
-              <div>
+              <Col>
                 <Card style={{ width: '20rem' }}>
                   <Card.Img class='profileImg' variant="top" style={{ height: '350px' }} src={Bashar} />
                   <Card.Body>
@@ -83,12 +85,8 @@ export class aboutUs extends Component {
                 </Card>
 
 
-              </div>
-
-
-
-            </div>
-            <div class='cards'>
+              </Col>
+              <Col>
               <Card style={{ width: '20rem' }}>
                 <Card.Img class='profileImg' variant="top" style={{ height: '350px' }} src={Aseel} />
                 <Card.Body>
@@ -102,9 +100,9 @@ export class aboutUs extends Component {
                   <Card.Link href="https://github.com/Aseelalsaqer"><img style={{ width: '1.5rem' }} src={imgGitHub} alt="" /></Card.Link>
                 </Card.Body>
               </Card>
+              </Col>
 
-
-              <div>
+              <Col>
                 <Card style={{ width: '20rem' }}>
                   <Card.Img class='profileImg' variant="top" style={{ height: '350px' }} src={Qais} />
                   <Card.Body>
@@ -120,11 +118,11 @@ export class aboutUs extends Component {
                 </Card>
 
 
-              </div>
+              </Col>
 
 
 
-              <div>
+              <Col>
                 <Card style={{ width: '20rem' }}>
                   <Card.Img class='profileImg' variant="top" style={{ height: '350px' }} src={Nedal} />
                   <Card.Body>
@@ -140,13 +138,14 @@ export class aboutUs extends Component {
                 </Card>
 
 
-              </div>
+              </Col>
 
 
 
 
 
-            </div>
+            
+            </Row>
           </div>
         </Container>
       </main>

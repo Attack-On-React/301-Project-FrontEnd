@@ -41,22 +41,20 @@ class CoursesToAddList extends Component {
                 </Card.Body>
               </div>
               <div class="addedcoursebutton">
-                <ion-icon name="add-outline">
+                <ion-icon  name="add-outline">
                   <Button  className="addbtn"
                     variant="primary"
                     onClick={() => {
                       this.props.addCourse(this.props.item);
                     }}
                   >{" "}
-                    <BiAddToQueue/> Add to My Courses 
+                    <BiAddToQueue className='svgCourses'/> Add to My Courses
                   </Button>
                 </ion-icon>
               </div>
             </Card>
           </div>
         </Col>
-        
-
       </>
     );
   }

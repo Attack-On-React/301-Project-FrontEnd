@@ -18,10 +18,10 @@ class Home extends Component {
           <section class="first-sec section">
               <div class="shape1"></div>
               <div class="shape2"></div>
-              <div class="shape3"></div>
 
             <div id="first-P">
-              <h1 calss="outter">Welcome To </h1>
+            <div class="shape3"></div>
+              <h1 className="outter">Welcome To </h1>
               <p>
                 {" "}
                 <p className="welcomingtext">We believe in a world where the Internet means opportunity, we care about your future.<span><br/></span> learn new skills online with top educators.</p>
@@ -35,18 +35,21 @@ class Home extends Component {
           </section>
           <hr />
           <section class="second-sec section">
-          <div class="shape1"></div>
-              <div class="shape2"></div>
-              <div class="shape3"></div>
-            <div id="img-div">
+            <div id="img-div" className="desktopimage">
               <img src="https://www.reliablesoft.net/wp-content/uploads/2019/08/digital-marketing-courses.png" />
             </div>
             <div id="second-P">
+               <div class="shape1"></div>
+              <div class="shape2"></div>
+              <div class="shape3"></div>
               <h1 className="outtertitle">investing in knowledge and your future </h1>
               <p>
                 {" "}
                 <p className="welcomingtext">with help of Study Station, create your own path and drive on your skills on your own to achieve what you seek</p>{" "}
               </p>
+            </div>
+            <div id="img-div" className="phoneimage">
+              <img src="https://www.reliablesoft.net/wp-content/uploads/2019/08/digital-marketing-courses.png" />
             </div>
           </section>
           <hr />
@@ -299,12 +302,12 @@ class Home extends Component {
             </div>
           </section>
           <hr />
-          <section class="corses-blogs-sect">
+          <section class="corses-blogs-sect container">
                 <div class="wide-card courses-card">
             <a href="/CoursesToAdd">
               <Card
                 className="bg-dark text-white homeCard"
-                style={{ width: "95%" }}
+                style={{ width: "auto" }}
               >
                 <Card.Img
                   src="https://i.ibb.co/jr1jCtF/Blue-Courses-Button-on-Computer-Keyboard-Background-for-Your-Blog-or-Publication.jpg"
@@ -313,7 +316,7 @@ class Home extends Component {
                 />
                 <Card.ImgOverlay>
                   <Card.Title class="home-cardTitle">
-                    <h1>Our Courses</h1>
+                    <h1 className="bottom-title">Our Courses</h1>
                   </Card.Title>
                   <Card.Text class="home-cardText" >
                     We are offering a very wide range of courses that you may be
@@ -326,7 +329,7 @@ class Home extends Component {
             <div class="wide-card blogs-card ">
               <a href="/blogs"><Card
                 className="bg-dark text-white homeCard"
-                style={{ width: "95%" }}
+                style={{ width: "auto" }}
               >
                 <Card.Img
                   src="https://i.ibb.co/L5vCX2H/blogs.jpg"
@@ -335,7 +338,7 @@ class Home extends Component {
                 />
                 <Card.ImgOverlay>
                   <Card.Title class="home-cardTitle">
-                    <h1>Blogs</h1>
+                    <h1 className="bottom-title">Blogs</h1>
                   </Card.Title>
                   <Card.Text class="home-cardText">
                     You can Improve your knowledge by visiting our BLOGS page.
